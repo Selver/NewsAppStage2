@@ -1,9 +1,7 @@
 package com.example.machomefolder.newsappstage1;
-
-        import android.content.AsyncTaskLoader;
-        import android.content.Context;
-
-        import java.util.List;
+import android.content.AsyncTaskLoader;
+import android.content.Context;
+import java.util.List;
 
 public class ArticleLoader extends AsyncTaskLoader<List<Article>> {
 
@@ -21,12 +19,10 @@ public class ArticleLoader extends AsyncTaskLoader<List<Article>> {
 
     @Override
     public List<Article> loadInBackground() {
-
         if (mUrl == null) {
             return null;
         }
         List<Article> articles = QueryUtils.fetchArticleData(mUrl);
-
         return articles;
     }
 }

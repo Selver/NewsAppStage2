@@ -1,11 +1,8 @@
 package com.example.machomefolder.newsappstage1;
-
 import android.util.Log;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -68,6 +65,7 @@ public class QueryUtils {
         }
         return jsonResponse;
     }
+
     public static List<Article> fetchArticleData(String requestUrl) {
         //Create URL object
         URL url = createUrl(requestUrl);
@@ -78,7 +76,6 @@ public class QueryUtils {
         } catch (IOException e) {
             Log.e(LOG_TAG, "Problem making the HTTP request.", e);
         }
-
         // Extract relevant fields from the JSON response and create a list of articles
         List<Article> articles = extractFeatureFromJson(jsonResponse);
         return articles;
@@ -114,16 +111,13 @@ public class QueryUtils {
                 Article article = new Article(title, section, author, dateFinal, articleUrl, image);
                 articles.add(article);
             }
-
         } catch (JSONException e) {
-
             Log.e(LOG_TAG, "Problem parsing the article JSON results", e);
         }
         return articles;
     }
 
     //Convert the {@link InputStream} into a String which contains the whole JSON response from the server.
-
     private static String readFromStream(InputStream inputStream) throws IOException {
         StringBuilder output = new StringBuilder();
         if (inputStream != null) {

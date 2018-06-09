@@ -1,19 +1,16 @@
 package com.example.machomefolder.newsappstage1;
-
 import android.app.LoaderManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.Loader;
 import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -56,7 +53,6 @@ public class NewsActivity extends AppCompatActivity
     //check if the device is connected to the internet
     private boolean isConnected() {
         ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-
         if (cm.getActiveNetworkInfo() != null && cm.getActiveNetworkInfo().isAvailable() && cm.getActiveNetworkInfo().isConnected()) {
             return true;
         } else {
@@ -67,7 +63,6 @@ public class NewsActivity extends AppCompatActivity
     //return a new loader
     @Override
     public Loader<List<Article>> onCreateLoader(int i, Bundle bundle) {
-
         return new ArticleLoader(this, GUARDIAN_REQUEST_URL);
     }
 
@@ -93,7 +88,6 @@ public class NewsActivity extends AppCompatActivity
     // reset the loader
     @Override
     public void onLoaderReset(Loader<List<Article>> loader) {
-
         mAdapter.clear();
     }
 }

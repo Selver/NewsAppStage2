@@ -1,5 +1,4 @@
 package com.example.machomefolder.newsappstage1;
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,11 +6,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.squareup.picasso.Picasso;
-
 import java.util.ArrayList;
-
 
 public class ArticleAdapter extends ArrayAdapter<Article> {
 
@@ -24,12 +20,10 @@ public class ArticleAdapter extends ArrayAdapter<Article> {
 
         // Check if the existing view is being reused, otherwise inflate the view
         View listItemView = convertView;
-
         if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_item, parent, false);
         }
-
         Article current_article = (Article) getItem(position);
 
         // Find the TextView and set the data

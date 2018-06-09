@@ -1,7 +1,6 @@
 package com.example.machomefolder.newsappstage1;
 
 public class Article {
-
     private final String mTitle;
     private final String mSection;
     private final String mAuthor;
@@ -40,6 +39,7 @@ public class Article {
     }
 
     public String getImage() {
-        return mImage; }
+        return mImage;
+    }
 }
 
