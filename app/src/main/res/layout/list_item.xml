@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image"
+                style="@style/imageViewStyle" />
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/titleViewStyle"
+                tools:text="@string/news_title" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/section"
+                style="@style/sectionViewStyle"
+                tools:text="@string/section_name" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="@dimen/dimen8">
+
+                <TextView
+                    android:id="@+id/author"
+                    style="@style/textViewStyle"
+                    tools:text="@string/author_name" />
+
+                <TextView
+                    android:id="@+id/date"
+                    style="@style/textViewStyle"
+                    tools:text="@string/date_and_time" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NewsAppStage1</string>
+    <string name="no_internet_connection">There is no internet connection.</string>
+    <string name="no_news">There is no news.</string>
+    <string name="news_title">News Title</string>
+    <string name="section_name">Section Name</string>
+    <string name="author_name">Author Name</string>
+    <string name="date_and_time">June 08,2018 02:35</string>
+    <string name="problem_building_the_URL">Problem building the URL</string>
+</resources>

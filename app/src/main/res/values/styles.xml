@@ -1,0 +1,42 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="imageViewStyle">
+        <item name="android:layout_width">@dimen/dimen80</item>
+        <item name="android:layout_height">@dimen/dimen80</item>
+        <item name="android:layout_marginRight">@dimen/dimen5</item>
+        <item name="android:src">@mipmap/ic_launcher</item>
+    </style>
+
+    <style name="titleViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/dimen8</item>
+        <item name="android:layout_marginTop">@dimen/dimen10</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
+    </style>
+
+    <style name="sectionViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/rounded_corner</item>
+        <item name="android:layout_marginTop">@dimen/dimen4</item>
+        <item name="android:layout_marginBottom">@dimen/dimen16</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
+    </style>
+
+    <style name="textViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:paddingBottom">@dimen/dimen4</item>
+    </style>
+</resources>
