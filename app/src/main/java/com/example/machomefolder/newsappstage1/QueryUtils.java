@@ -54,6 +54,7 @@ public class QueryUtils {
             jsonResponse = readFromStream(inputStream);
         } catch (IOException e) {
             //handle the exception
+            Log.e(LOG_TAG, "Problem with connection", e);
         } finally {
             if (urlConnection != null) {
                 urlConnection.disconnect();

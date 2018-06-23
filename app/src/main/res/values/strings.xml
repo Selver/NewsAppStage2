@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">NewsAppStage1</string>
+    <string name="app_name">NewsApp</string>
     <string name="no_internet_connection">There is no internet connection.</string>
     <string name="no_news">There is no news.</string>
     <string name="news_title">News Title</string>
@@ -7,4 +7,39 @@
     <string name="author_name">Author Name</string>
     <string name="date_and_time">June 08,2018 02:35</string>
     <string name="problem_building_the_URL">Problem building the URL</string>
+    <string name="settings_menu_item">Settings</string>
+    <string name="settings_title">News App Settings</string>
+
+    <!-- Strings For Order-By Preference [CHAR LIMIT=30] -->
+    <string name="settings_order_by_label">Order By</string>
+    <string name="settings_order_by_key" translatable="false">order_by</string>
+    <string name="settings_order_by_default" translatable="false">newest</string>
+
+    <!-- Label for order-by most recent option [CHAR LIMIT=20] -->
+    <string name="settings_order_by_most_recent_label">Most Recent</string>
+    <string name="settings_order_by_most_recent_value" translatable="false">time</string>
+
+    <string name="settings_section_key" translatable="false">sectionId</string>
+    <string name="settings_section_default" translatable="false">@string/setting_show_all_sections_key_value</string>
+
+    <string name="setting_show_all_sections_label">Different News</string>
+    <string name="setting_show_all_sections_key_value">api-key</string>
+
+    <string name="settings_section_by_technology_label">Technology</string>
+    <string name="settings_section_by_technology_value" translatable="false">technology</string>
+
+    <string name="settings_section_by_opinion_label">Opinion</string>
+    <string name="settings_section_by_opinion_value" translatable="false">commentisfree</string>
+
+    <string name="settings_section_by_politics_label">Politics</string>
+    <string name="settings_section_by_politics_value" translatable="false">politics</string>
+
+    <string name="settings_section_by_media_label">Media</string>
+    <string name="settings_section_by_media_value" translatable="false">media</string>
+
+    <string name="settings_section_by_world_news_label">World news</string>
+    <string name="settings_section_by_world_news_value" translatable="false">world</string>
+
+    <string name="settings_section_by_stage_label">Stage</string>
+    <string name="settings_section_by_stage_value" translatable="false">stage</string>
 </resources>
