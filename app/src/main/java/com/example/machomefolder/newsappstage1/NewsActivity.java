@@ -23,7 +23,7 @@ public class NewsActivity extends AppCompatActivity
 
     private static final int ARTICLE_LOADER_ID = 1;
     //URL of the data 
-    private static final String GUARDIAN_REQUEST_URL = "https://content.guardianapis.com/search";
+    private static final String GUARDIAN_REQUEST_URL = "https://content.guardianapis.com/search?show-fields=byline%2Cthumbnail&api-key=3ffed2d9-6a7f-4672-9a8c-313113e2f6ac&show-tags=contributor";
     //https://content.guardianapis.com/search?section=education&order-by=newest&show-elements=image&show-fields=byline%2Cthumbnail&page=1&page-size=10&api-key=test"
 
     private ArticleAdapter mAdapter;
@@ -72,15 +72,17 @@ public class NewsActivity extends AppCompatActivity
 
             SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
 
-        String section = sharedPrefs.getString(
-                getString(R.string.settings_section_key),
-                getString(R.string.settings_section_default)
-        );
 
-        String orderBy  = sharedPrefs.getString(
+        // getString retrieves a String value from the preferences. The second parameter is the default value for this preference.
+        String section = sharedPrefs.getString(
+                getString(R.string.listpreference_key),
+                getString(R.string.section_value_11));
+
+
+    /*    String orderBy  = sharedPrefs.getString(
                 getString(R.string.settings_order_by_key),
                 getString(R.string.settings_order_by_default)
-        );
+        );*/
 
             // parse breaks apart the URI string that's passed into its parameter
             Uri baseUri = Uri.parse(GUARDIAN_REQUEST_URL);
@@ -90,8 +92,8 @@ public class NewsActivity extends AppCompatActivity
 
             // Append query parameter and its value.
 
-            uriBuilder.appendQueryParameter("section", section);
-            uriBuilder.appendQueryParameter("order-by", orderBy);
+            uriBuilder.appendQueryParameter("sectionName", section);
+//            uriBuilder.appendQueryParameter("orderBy", orderBy);
 
             // Return the completed uri `http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&limit=10&minmag=minMagnitude&orderby=time
             return new ArticleLoader(this, uriBuilder.toString());
