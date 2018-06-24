@@ -24,7 +24,8 @@ public class NewsActivity extends AppCompatActivity
 
     private static final int ARTICLE_LOADER_ID = 1;
     //URL of the data 
-    private static final String GUARDIAN_REQUEST_URL = "https://content.guardianapis.com/search?show-fields=byline%2Cthumbnail&api-key=3ffed2d9-6a7f-4672-9a8c-313113e2f6ac&show-tags=contributor";
+    private static final String GUARDIAN_REQUEST_URL = "https://content.guardianapis.com/search?q=";
+          //  "https://content.guardianapis.com/search?show-fields=byline%2Cthumbnail&api-key=3ffed2d9-6a7f-4672-9a8c-313113e2f6ac&show-tags=contributor";
     //"http://content.guardianapis.com/search";
     //https://content.guardianapis.com/search?section=education&order-by=newest&show-elements=image&show-fields=byline%2Cthumbnail&page=1&page-size=10&api-key=test"
 
