@@ -15,5 +15,4 @@
         android:entryValues="@array/sections_values"
         android:key="@string/list_preference_key"
         android:title="@string/settings_fragment_title" />
-
 </PreferenceScreen>

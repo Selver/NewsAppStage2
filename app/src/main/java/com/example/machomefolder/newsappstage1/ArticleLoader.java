@@ -11,7 +11,6 @@ public class ArticleLoader extends AsyncTaskLoader<List<Article>> {
         super(context);
         mUrl = url;
     }
-
     @Override
     protected void onStartLoading() {
         forceLoad();
