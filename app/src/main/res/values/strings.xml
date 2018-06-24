@@ -9,12 +9,17 @@
     <string name="problem_building_the_URL">Problem building the URL</string>
     <string name="settings_menu_item">Settings</string>
     <string name="settings_title">News App Settings</string>
+    <string name="api_key">3ffed2d9-6a7f-4672-9a8c-313113e2f6ac</string>
 
 
-
-    <string name="listpreference_key">section</string>
+    <string name="list_preference_key">section</string>
     <string name="settings_order" translatable="false">Order</string>
     <string name="settings_fragment_title">News Topic</string>
+
+
+    <!-- Label for order-by least recent option [CHAR LIMIT=20] -->
+    <string name="settings_order_by_least_recent_label">Least Recent</string>
+    <string name="settings_order_by_least_recent_value" translatable="false">oldest</string>
 
     <!-- Strings For Order-By Preference [CHAR LIMIT=30] -->
     <string name="settings_order_by_label">Order By</string>
@@ -24,67 +29,33 @@
     //for most recent
     <!-- Label for order-by most recent option [CHAR LIMIT=20] -->
     <string name="settings_order_by_most_recent_label">Most Recent</string>
-    <string name="settings_order_by_most_recent_value" translatable="false">time</string>
+    <string name="settings_order_by_most_recent_value" translatable="false">newest</string>
 
 //for section
-    <string name="section_value_1">artanddesign</string>
-    <string name="section_value_2">books</string>
-    <string name="section_value_3">business</string>
-    <string name="section_value_4">cities</string>
-    <string name="section_value_5">culture</string>
-    <string name="section_value_6">education</string>
-    <string name="section_value_7">environment</string>
-    <string name="section_value_8">film</string>
-    <string name="section_value_9">music</string>
-    <string name="section_value_10">science</string>
-    <string name="section_value_11">technology</string>
+    <string name="section_value_art_and_design">artanddesign</string>
+    <string name="section_value_books">books</string>
+    <string name="section_value_business">business</string>
+    <string name="section_value_cities">cities</string>
+    <string name="section_value_culture">culture</string>
+    <string name="section_value_education">education</string>
+    <string name="section_value_environment">environment</string>
+    <string name="section_value_film">film</string>
+    <string name="section_value_music">music</string>
+    <string name="section_value_science">science</string>
+    <string name="section_value_technology">technology</string>
 
-    <string name="section_name_1">Art and Design</string>
-    <string name="section_name_2">Books</string>
-    <string name="section_name_3">Business</string>
-    <string name="section_name_4">Cities</string>
-    <string name="section_name_5">Culture</string>
-    <string name="section_name_6">Education</string>
-    <string name="section_name_7">Environment</string>
-    <string name="section_name_8">Film</string>
-    <string name="section_name_9">Music</string>
-    <string name="section_name_10">Science</string>
-    <string name="section_name_11">Technology</string>
+    <string name="section_label_art_and_design">Art and Design</string>
+    <string name="section_label_books">Books</string>
+    <string name="section_label_business">Business</string>
+    <string name="section_label_cities">Cities</string>
+    <string name="section_label_culture">Culture</string>
+    <string name="section_label_education">Education</string>
+    <string name="section_label_environment">Environment</string>
+    <string name="section_label_film">Film</string>
+    <string name="section_label_music">Music</string>
+    <string name="section_label_science">Science</string>
+    <string name="section_label_technology">Technology</string>
 
-   <!-- <string name="api_key" translatable="false">api-key</string>
-
-    &lt;!&ndash; Strings For Order-By Preference [CHAR LIMIT=30] &ndash;&gt;
-    <string name="settings_order_by_label">Order By</string>
-    <string name="settings_order_by_key" translatable="false">order_by</string>
-    <string name="settings_order_by_default" translatable="false">newest</string>
-
-    &lt;!&ndash; Label for order-by most recent option [CHAR LIMIT=20] &ndash;&gt;
-    <string name="settings_order_by_most_recent_label">Most Recent</string>
-    <string name="settings_order_by_most_recent_value" translatable="false">time</string>
-
-    <string name="settings_section_key" translatable="false">sectionId</string>
-    <string name="settings_section_default" translatable="false">@string/setting_show_all_sections_key_value</string>
-
-    <string name="setting_show_all_sections_label">Different News</string>
-    <string name="setting_show_all_sections_key_value">api-key</string>
-
-    <string name="settings_section_by_technology_label">Technology</string>
-    <string name="settings_section_by_technology_value" translatable="false">technology</string>
-
-    <string name="settings_section_by_opinion_label">Opinion</string>
-    <string name="settings_section_by_opinion_value" translatable="false">commentisfree</string>
-
-    <string name="settings_section_by_politics_label">Politics</string>
-    <string name="settings_section_by_politics_value" translatable="false">politics</string>
-
-    <string name="settings_section_by_media_label">Media</string>
-    <string name="settings_section_by_media_value" translatable="false">media</string>
-
-    <string name="settings_section_by_world_news_label">World news</string>
-    <string name="settings_section_by_world_news_value" translatable="false">world</string>
-
-    <string name="settings_section_by_stage_label">Stage</string>
-    <string name="settings_section_by_stage_value" translatable="false">stage</string>-->
 </resources>
 
 

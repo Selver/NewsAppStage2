@@ -3,10 +3,17 @@
     android:title="@string/settings_title">
 
     <ListPreference
-        android:defaultValue="@string/section_value_11"
+        android:defaultValue="@string/settings_order_by_default"
+        android:entries="@array/settings_order_by_labels"
+        android:entryValues="@array/settings_order_by_values"
+        android:key="@string/settings_order_by_key"
+        android:title="@string/settings_order_by_label" />
+
+    <ListPreference
+        android:defaultValue="@string/section_value_education"
         android:entries="@array/sections_name"
         android:entryValues="@array/sections_values"
-        android:key="@string/listpreference_key"
+        android:key="@string/list_preference_key"
         android:title="@string/settings_fragment_title" />
 
 </PreferenceScreen>
